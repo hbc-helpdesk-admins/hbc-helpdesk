@@ -65,7 +65,6 @@ header {
     padding: 0.5rem;
 }
 
-
 .main-nav a:hover {
     background-color: #90A07A;
 }
@@ -76,54 +75,77 @@ header {
     border-radius: 4px;
 }
 
-/* guide section start from here */
+/* Banner Section */
+.banner {
+    background-image: url('./images/theme.png');
+    background-size: cover;
+    color: white;
+    padding: 2rem;
+    
+}
 
-.guide-section {
-    padding: 20px;
-    text-align: center;
-  }
-  
-  .guide-section h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
-  
-  .pdf-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 20px;
-  }
-  
-  .pdf-item {
+.banner h1 {
+    font-size: 2.5rem;
+    text-align: left;
+}
+
+.banner h2 {
+    font-size: 1.8rem;
+    margin-top: 0.5rem;
+    text-align: left;
+}
+
+.pdf-options label {
+    display: inline-block;
+    margin-top: 0.5rem;
+    color: rgb(255, 255, 255);
+}
+
+/* Category Section */
+.category h3 {
+    font-size: 1.8rem;
+    text-align: left;
+    margin: 20px;
+    margin-left: 40px;
+    
+}
+
+.sections {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    background-color: #d3d3d3;
-    border-radius: 8px;
-  }
-  
-  .pdf-item span {
-    font-weight: bold;
-    color: #333;
-  }
-  
-  .pdf-button {
-    padding: 5px 10px;
-    background-color: #666;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  .pdf-button:hover {
-    background-color: #555;
-  }
-  
-  a{
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.sections a{
     text-decoration: none;
-  }
+    color: black;
+}
+
+.category-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 90%; /* Full width on smaller screens */
+    max-width: 280px;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 7px;
+    background-color: #a5c685;
+    color: #000000;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+}
+
+.category-item img {
+    width: 28px;
+    margin-bottom: 0.5rem;
+}
+
+a{
+    text-decoration: none;
+}
 
 /* Footer */
 footer {
@@ -131,7 +153,6 @@ footer {
     text-align: center;
     padding: 1rem;
     font-size: 0.9rem;
-    margin-top: 233px;
 }
 
 .support-links-footer {
@@ -160,9 +181,9 @@ footer {
     /* .support-links {
         flex-direction: column;
         text-align: center;
-    } */
+    }
 
-    /* .main-nav {
+    .main-nav {
         flex-direction: column;
     } */
 
